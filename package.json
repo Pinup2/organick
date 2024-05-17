@@ -4,11 +4,12 @@
   "description": "landing page for the UI internship at Grid Dynamics",
   "main": "index.html",
   "scripts": {
-    "start": "sass sass/main.scss css/style.css -w",
-    "compile-sass": "sass sass/main.scss css/style.compiled.css",
+    "start": "npm-run-all --parallel compile-sass serve",
+    "compile-sass": "sass sass/main.scss css/style.css -w",
     "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     "compress-css": "sass css/style.prefix.css css/style.css --style compressed",
-    "build-css": "npm-run-all compile-sass prefix-css compress-css"
+    "build-css": "npm-run-all compile-sass prefix-css compress-css",
+    "serve": "live-server --watch=css --port=3000"
   },
   "author": "Naida Anghelina",
   "license": "Grid Dynamics",
@@ -16,6 +17,7 @@
     "autoprefixer": "^10.4.16",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "live-server": "^1.2.1"
   }
 }

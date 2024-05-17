@@ -141,6 +141,9 @@ a:visited {
   font-family: "Roboto";
   cursor: pointer;
 }
+.button :hover {
+  background-color: #388e3c;
+}
 @media only screen and (max-width: 62.5em) {
   .button {
     font-size: 1.8rem;
