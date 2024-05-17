@@ -1,0 +1,15 @@
+.card {
+  border-radius: 3.2rem;
+
+  &--vertical {
+    flex: 1 1 43.2rem;
+    max-width: 43.2rem;
+    min-width: 32rem;
+  }
+
+  &--horizontal {
+    flex: 1;
+    max-width: 66.4rem;
+    min-width: 32rem;
+  }
+}

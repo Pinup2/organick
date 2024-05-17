@@ -1,0 +1,30 @@
+.section-top {
+  max-width: 136rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2.4rem 8rem;
+  margin: 0 auto 4.8rem auto;
+
+  &__subtitle {
+    color: $color-primary;
+
+    @include media(max, 31.25em) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__title {
+    &--white {
+      color: $color-white;
+    }
+
+    &--body {
+      color: $color-body;
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}

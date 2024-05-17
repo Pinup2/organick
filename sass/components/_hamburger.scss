@@ -1,0 +1,65 @@
+.hamburger {
+  width: 2rem;
+  height: 1.6rem;
+  position: relative;
+  display: none;
+  z-index: 20;
+  order: 1;
+
+  @include media(max, 62.5em) {
+    display: block;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .hamburger {
+      position: fixed;
+      top: 4rem;
+      right: 2.4rem;
+
+      @include media(max, 31.25em) {
+        top: 2.8rem;
+        right: 1.6rem;
+      }
+
+      & > .hamburger__line {
+        &--top {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+
+        &--center {
+          opacity: 0;
+        }
+
+        &--bottom {
+          bottom: 50%;
+          transform: translateY(50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 2rem;
+    height: 0.1rem;
+    border-radius: 100rem;
+    background-color: $color-body;
+    position: absolute;
+    transition: all 0.3s;
+
+    &--top {
+      top: 0;
+    }
+
+    &--center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--bottom {
+      bottom: 0;
+    }
+  }
+}

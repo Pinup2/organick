@@ -1,0 +1,52 @@
+.testimonials {
+  padding: 16rem 8rem;
+  background-image: url(../img/lemon-cinnamon.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  @include media(max, 62.5em) {
+    padding: 12rem 4rem;
+  }
+
+  @include media(max, 31.25em) {
+    padding: 6.4rem 1.6rem;
+  }
+
+  &__content {
+    max-width: 89.6rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+  }
+
+  &__title {
+    margin-bottom: 6.4rem;
+  }
+
+  &__img {
+    width: 11.2rem;
+    display: block;
+    border-radius: 50%;
+    margin: 1.6rem auto;
+  }
+
+  &__rating {
+    justify-content: center;
+    margin-bottom: 3.2rem;
+  }
+
+  &__testimonial {
+    color: $color-grey-5;
+    margin-bottom: 2.4rem;
+  }
+
+  &__consumer {
+    display: inline-block;
+    color: $color-grey-5;
+    margin-top: 0.8rem;
+  }
+}

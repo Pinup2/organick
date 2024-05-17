@@ -1,0 +1,16 @@
+.rating {
+  gap: 0.4rem;
+  display: flex;
+
+  &__star-icon {
+    &--small {
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+
+    &--large {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+}

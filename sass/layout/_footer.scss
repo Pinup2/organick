@@ -1,0 +1,178 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 3.2rem;
+    max-width: 136rem;
+    margin: 0 4rem;
+  }
+
+  &__center {
+    padding: 3.2rem 4.8rem 4.8rem;
+    text-align: center;
+    border-left: 0.1rem solid $color-grey-3;
+    border-right: 0.1rem solid $color-grey-3;
+    order: 2;
+  }
+
+  &__logo {
+    width: 20rem;
+    height: 5.6rem;
+    margin-bottom: 4rem;
+  }
+
+  &__social-media {
+    margin-top: 6.4rem;
+    gap: 2.4rem;
+  }
+
+  &__left,
+  &__right {
+    padding: 0.8rem 1.6rem 0;
+    font-style: normal;
+    flex-basis: 34.8rem;
+  }
+
+  &__left {
+    order: 1;
+    text-align: right;
+  }
+
+  &__contact-title,
+  &__utility-title {
+    margin-bottom: 4.8rem;
+  }
+
+  &__contact-subtitle {
+    color: $color-grey-5;
+  }
+
+  &__contact-text:not(:last-of-type) {
+    color: $color-grey-5;
+    margin-bottom: 3.2rem;
+  }
+
+  &__right {
+    order: 3;
+    text-align: left;
+  }
+
+  &__utility-link {
+    &,
+    &:link,
+    &:visited {
+      display: block;
+      text-decoration: none;
+      color: $color-grey-5;
+      width: fit-content;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    border-top: 0.1rem solid $color-grey-3;
+    padding: 1.6rem 0;
+    color: $color-grey-5;
+    align-self: stretch;
+  }
+
+  @include media(max, 75em) {
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+
+      @include media(max, 62.5em) {
+        margin: 0 2.4rem;
+      }
+    }
+
+    &__text {
+      margin: 0 auto;
+    }
+
+    &__center {
+      border: none;
+      order: 0;
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+
+    &__left {
+      order: 0;
+      border-right: 0.1rem solid $color-grey-3;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      padding-right: 4rem;
+    }
+
+    &__right {
+      order: 0;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      padding-left: 4rem;
+    }
+
+    &__text {
+      max-width: 56.7rem;
+    }
+  }
+
+  @include media(max, 43.75em) {
+    &__content {
+      grid-template-columns: 1fr;
+
+      @include media(max, 31.25em) {
+        margin: 0 1.6rem;
+      }
+    }
+
+    &__center {
+      grid-column: auto;
+      grid-row: auto;
+      padding: 3.2rem 0 0;
+    }
+
+    &__left {
+      border-right: none;
+      grid-column: auto;
+      grid-row: auto;
+      padding: 0;
+      text-align: left;
+    }
+
+    &__right {
+      grid-column: auto;
+      grid-row: auto;
+      padding: 0;
+    }
+
+    &__contact-title,
+    &__utility-title {
+      margin-bottom: 2.4rem;
+      margin-top: 6.4rem;
+    }
+
+    &__contact-text:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+
+    &__utility-link:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+
+    &__copyright {
+      padding: 2.4rem 0;
+    }
+  }
+}

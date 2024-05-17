@@ -1,0 +1,54 @@
+.subscribe {
+  padding: 0 4rem 9.6rem;
+
+  &__card {
+    max-width: 136rem;
+    min-width: 32rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem 8.6rem;
+    padding: 10.4rem 6.4rem;
+    background-image: url(../img/oranges.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &__title {
+    color: $color-white;
+    flex: 1 1 32.3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    flex-basis: 63rem;
+  }
+
+  &__email {
+    min-width: 26rem;
+    max-width: 42rem;
+    flex: 1 1 30.4rem;
+  }
+
+  @include media(max, 62.5em) {
+    padding: 0 2.4rem 5.6rem;
+  }
+
+  @include media(max, 31.25em) {
+    padding: 0 1.6rem 3.2rem;
+
+    &__card {
+      padding: 3.2rem;
+    }
+
+    &__form {
+      gap: 1.6rem;
+    }
+  }
+}

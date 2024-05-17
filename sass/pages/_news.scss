@@ -1,0 +1,12 @@
+.news {
+  background-color: $color-white;
+  padding: 9.6rem 4rem;
+
+  @include media(max, 62.5em) {
+    padding: 7.8rem 2.4rem;
+  }
+
+  @include media(max, 31.25em) {
+    padding: 6.2rem 1.6rem;
+  }
+}

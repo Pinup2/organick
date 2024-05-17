@@ -1,0 +1,48 @@
+.offer-card {
+  height: 38.4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 6.4rem;
+  cursor: pointer;
+  flex: 1 1 38.6rem;
+
+  @include media(max, 62.5em) {
+    height: 34rem;
+    padding: 0 5.4rem;
+  }
+
+  @include media(max, 31.25em) {
+    height: 32rem;
+  }
+
+  &--1 {
+    background-image: url(../img/offer-1.jpeg);
+  }
+
+  &--2 {
+    background-image: url(../img/offer-2.jpeg);
+  }
+
+  &__subtitle {
+    &--1 {
+      color: $color-white;
+    }
+
+    &--2 {
+      color: $color-primary;
+    }
+  }
+
+  &__title {
+    max-width: 26rem;
+
+    &--1 {
+      color: $color-white;
+    }
+  }
+}

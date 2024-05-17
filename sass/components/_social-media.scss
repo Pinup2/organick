@@ -1,0 +1,19 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__icon-box {
+    display: grid;
+    place-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: $color-grey-1;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
