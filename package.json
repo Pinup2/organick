@@ -10,7 +10,7 @@
     "compress-css": "sass css/style.prefix.css css/style.css --style compressed",
     "build-css": "npm-run-all compile-sass prefix-css compress-css"
   },
-  "author": "Cezar Drumea",
+  "author": "Naida Anghelina",
   "license": "Grid Dynamics",
   "devDependencies": {
     "autoprefixer": "^10.4.16",

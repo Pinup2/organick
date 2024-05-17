@@ -10,8 +10,8 @@
     display: block;
   }
 
-  &__checkbox {
-    display: none;
+  // &__checkbox {
+  //   display: none;
 
     &:checked + .hamburger {
       position: fixed;
